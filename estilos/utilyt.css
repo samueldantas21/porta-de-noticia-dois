@@ -11,3 +11,13 @@
     grid-auto-flow: column;
    
 }
+
+/* vai definir quantas colunas vai ter */
+.grid-cols-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.gap-16{
+    gap: 16px;
+}
