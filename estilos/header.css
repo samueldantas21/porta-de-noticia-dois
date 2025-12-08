@@ -1,0 +1,50 @@
+#primeiro{
+    /*  o paddin-block define o eixo vertical */
+    padding-block: 20px ;
+    
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+
+
+
+    /* nesting css */
+    /* pega a segunda div dentro do id primeiro */
+
+    div:nth-child(2){
+        
+        /* pega o eixo horizontal */
+        margin-inline: auto;
+
+    }
+
+
+
+    div:nth-child(3){
+        /* pra jogar a terceira div pro final */
+        justify-self:end ;
+    }
+    
+
+
+
+}
+#segundo{
+     /*  o paddin-block define o eixo vertical */
+    padding-block: 14px;
+
+    border: solid 1px var(--stroke-color);
+    /* pra remover os tracos das laterais */
+    border-inline: none;
+
+    padding-inline: 32px;
+
+    /* dar espaco entre os elementos */
+    justify-content: space-between;
+    
+    
+}

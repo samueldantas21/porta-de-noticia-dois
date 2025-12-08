@@ -29,16 +29,32 @@ body{
     background-color: var(--bg-color);
     
 }
+
+.container{
+    /* pra definer alargura maxima do bloco  */
+    max-width: 1280px;
+    /* definir o eixo horizontal  do bloco */
+    padding-inline:32px ;
+    /* para definir as margens laterais */
+    margin-inline: auto;
+
+}
+
 a{
     text-decoration: none;
     /* o inherit e pra herda a cor q ta no body */
     color: inherit;
 }
+
+
 a:hover{
-    color: var(--brand-color-light
-    );
+    color: var(--brand-color-light);
 }
+
+
+
 h1,h2,h3{
     /* ta herdando a fonte q esta dentro do body */
     font: inherit;
 }
+

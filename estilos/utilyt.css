@@ -1,0 +1,13 @@
+/* pra cria as utilidade */
+
+
+/* indentificar o display */
+.grid{
+    display: grid;
+}
+
+/* defenir q vai ser um coluna */
+.grid-flow-col{
+    grid-auto-flow: column;
+   
+}
