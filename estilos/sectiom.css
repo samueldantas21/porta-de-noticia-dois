@@ -65,10 +65,16 @@
 
             padding: 24px;
 
+            /* pra olhar o filho q da dentro do figcaption */
+            &:has(.text-lg){
+                padding: 12px ;
+            }
 
             h2{
                 margin-top: 8px;
             }
+
+
         }
 
     }
