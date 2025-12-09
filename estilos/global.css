@@ -66,3 +66,23 @@ main{
     margin-top: 40px;
 }
 
+.tag{
+    /* aqui ta definindo o span  */
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 4px;
+    border-radius: 4%;
+    /* difinindo a font */
+    font:500 10px/1.2 var(--font-family);
+    /* definindo os estilos das lestra pra fica maiuscula */
+    text-transform: uppercase;
+    /* definindo os espacamenteo das letra */
+    letter-spacing: 0.04em;
+    
+    /* pra dar sobreamento na caixa */
+    box-shadow:0px 4px rgba(2,6, 23, 0.23);
+    /* 1 faz um posicionamento a direita heixo horizontal*/
+    /* 2 faz um posicionamento em baixo heixo vertical */
+    /* 3 pra fazer um borramento  */
+    /* 4 definir a cor */
+}

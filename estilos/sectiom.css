@@ -5,8 +5,74 @@
         height: 100%;
         /* faz a cobertura de todo espaco q esta sobrando  */
         object-fit: cover;
-        /* pra da uma aredondada nas bordas das img */
-        border-radius: 4px;
-        
+       
     }
+
+    .cardd{
+
+        /* pra da uma aredondada nas bordas das img */    
+        border-radius: 4px;
+
+        /* tem q por pra ficar encima so da img */
+        position: relative;
+
+        
+
+        /* serve pra esconder tudo q passa da caixa */
+        overflow: hidden;
+
+     
+        
+
+
+    /* o "&" seria a mesma coisa de fazer .card::before */
+
+    /* o before e pra por conteudo decorativo antes do conteudo pricipal*/
+
+        &::before{
+
+            /* pra criar um elenento html no css precisa term o content  */
+            content: "";
+
+            /* posicao */
+            position: absolute;
+
+            /*  */
+            inset: 0;
+            
+
+            /* pra definir ate qual altura vai ficar a cor ou alguma outra coisa na img */
+            top: 50%;
+            
+
+            /* pra deixa uma cor ou alguma coisa em degrader */
+            /* 1 pra fala a agulacao q eu quero
+            2 falo a cor q eu quero
+            3 falo a outra cor*/
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                #020617 100%
+
+            );
+        }
+   
+        
+        figcaption{
+            /* pra deixa a posicao do figcaption acima  */
+            position: absolute;
+            bottom: 0;
+
+            padding: 24px;
+
+
+            h2{
+                margin-top: 8px;
+            }
+        }
+
+    }
+
+ 
+
 }
