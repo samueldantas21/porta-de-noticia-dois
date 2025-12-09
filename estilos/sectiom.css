@@ -1,4 +1,41 @@
-#feat{
+
+/* vai ler todo header q tiver dentro do section */
+section header{
+    border-top: 1px solid var(--stroke-color);
+    /* pra definir espacamento interno */
+    padding-block: 12px 24px;
+    font: var(--span);
+
+    /* pra colocar as img em cada A q estiver dentro do header */
+    a{
+
+        align-items: center;
+        justify-self: end;
+        gap:16px;
+
+        span{
+            /* aqui estou add a setinha */
+        background-image: url(../assentes/ArrowRight\ \(4\).svg);
+       
+
+            height: 16px;
+            width: 16px;
+
+        /* pra quando passa o mause encima ficar azul */
+        &:hover span{
+            background-image: url(../assentes/icones/ArrowRight\ \(3\).svg);
+
+           
+        }
+
+    }
+        
+    }
+    
+
+}
+
+#feat{ 
     /* vai obeserva todas img dentro do feat*/
     img{
         /* deifinindo altura */
@@ -80,5 +117,37 @@
     }
 
  
+
+}
+#weekly{
+
+    
+
+    /* margin-top: 80px; */
+    /* vai pegar a primeria div */
+    &>div{
+        grid-template-columns: repeat(4,292px)
+
+    }
+
+
+    img{
+        height: 160px;
+    }
+
+    figure{
+        
+        position: relative;
+
+        .tag{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        p{
+            margin-top: 8px;
+            font-weight:800;
+        }
+    }
 
 }

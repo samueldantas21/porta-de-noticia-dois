@@ -64,6 +64,7 @@ img{
 /* definir a aultura da main */
 main{
     margin-top: 40px;
+    gap: 40px;
 }
 
 .tag{
@@ -78,7 +79,7 @@ main{
     text-transform: uppercase;
     /* definindo os espacamenteo das letra */
     letter-spacing: 0.04em;
-    
+
     /* pra dar sobreamento na caixa */
     box-shadow:0px 4px rgba(2,6, 23, 0.23);
     /* 1 faz um posicionamento a direita heixo horizontal*/
