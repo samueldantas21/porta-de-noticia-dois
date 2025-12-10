@@ -36,6 +36,11 @@ section header{
 }
 
 #feat{ 
+
+    /* tem q definir aqui o grid area pra funcionar direito usando o grid-templat-area la no main */
+    grid-area: feat;
+
+
     /* vai obeserva todas img dentro do feat*/
     img{
         /* deifinindo altura */
@@ -120,6 +125,9 @@ section header{
 
 }
 #weekly{
+    
+     /* tem q definir aqui o grid area pra funcionar direito usando o grid-templat-area la no main */
+    grid-area: weekly;
 
     
 
@@ -149,5 +157,46 @@ section header{
             font-weight:800;
         }
     }
+ 
+}
+
+.ai{
+    /* tem q definir aqui o grid area pra funcionar direito usando o grid-templat-area la no main */
+    grid-area: ai;
+        img {
+            height: 176;
+
+            /* faz a img ficar quadrada basicamente perfeito/ efinir e manter automaticamente a proporção de largura e altura de um elemento */
+            aspect-ratio: 1/1;
+
+            /* pra cobri toda a area da img */
+            object-fit: cover;
+
+        }
+        h3{
+            /* definifndo a altura pra baixo e cima de separamento do h3 */
+            margin-block:8px 4px ;
+        }
+
+}
+aside{
+     /* tem q definir aqui o grid area pra funcionar direito usando o grid-templat-area la no main */
+    grid-area: aside;
+
+
+}
+#more{
+    margin-top: 32px;
+    /* definindo o tamanho do espacamenmtno do h3 */
+    h3{
+        margin-top: 8px;
+    }
+    /* definindo o tamnho das img do more*/
+    img{
+        height: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
 
 }

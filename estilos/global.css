@@ -64,7 +64,20 @@ img{
 /* definir a aultura da main */
 main{
     margin-top: 40px;
-    gap: 40px;
+    /* definindo os espacamentos q esta dentro do main */
+    row-gap: 80px;
+    column-gap: 32px ;
+
+    /* definindo o tamanho das areas q foi defenida la no grid-templat-areas */
+     /* os 2fr vai tudo q ta dentro da primera coluna q defini usando o  grid-templat-areas, e o 1.5 vai o da segunda coluuna q esta sozinho q e aside */
+    grid-template-columns: 2fr 1.5fr;
+
+    /* definir as areas dentro do main usando o */
+    grid-template-areas:
+    "feat feat"
+    "weekly weekly"
+    "ai aside"
+    ;
 }
 
 .tag{
